@@ -5,7 +5,7 @@ A robust & optimized ES3-compatible polyfill for [the `String.prototype.startsWi
 Other polyfills for `String.prototype.startsWith` are available:
 
 * <https://github.com/paulmillr/es6-shim/blob/4322eae20b6f8a7769fa1d89ac207ef8ee9e1ee4/es6-shim.js#L148-L154> by [Paul Miller](http://paulmillr.com/) ([fails 3 tests](https://github.com/paulmillr/es6-shim/issues/167))
-* <https://github.com/google/traceur-compiler/blob/b9b6c1ad7837c6f156213f690c05374604767fac/src/runtime/runtime.js#L52-L54> by Google (fails a lot of tests)
+* <https://github.com/google/traceur-compiler/blob/b9b6c1ad7837c6f156213f690c05374604767fac/src/runtime/runtime.js#L52-L54> by Google (~~[fails a lot of tests](https://github.com/google/traceur-compiler/pull/554)~~ now uses this polyfill and passes all tests)
 
 ## Installation
 
