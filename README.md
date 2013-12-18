@@ -31,6 +31,10 @@ require('string.prototype.startswith');
 require('String.prototype.startsWith');
 ```
 
+## Notes
+
+Polyfills + test suites for [`String.prototype.endsWith`](http://mths.be/endswith) and [`String.prototype.contains`](http://mths.be/contains) are available, too.
+
 ## Author
 
 | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
