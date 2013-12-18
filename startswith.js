@@ -5,13 +5,13 @@ if (!String.prototype.startsWith) {
 		var indexOf = ''.indexOf;
 		var toString = {}.toString;
 		String.prototype.startsWith = function(search) {
+			var string = String(this);
 			if (
 				this == null ||
 				(search && toString.call(search) == '[object RegExp]')
 			) {
 				throw TypeError();
 			}
-			var string = String(this);
 			var stringLength = string.length;
 			var searchString = String(search);
 			var searchLength = searchString.length;
