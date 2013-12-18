@@ -193,6 +193,7 @@ assertEquals(String.prototype.startsWith.call(42, '2', 4), false);
 assertEquals(String.prototype.startsWith.call({ 'toString': function() { return 'abc'; } }, 'b', 0), false);
 assertEquals(String.prototype.startsWith.call({ 'toString': function() { return 'abc'; } }, 'b', 1), true);
 assertEquals(String.prototype.startsWith.call({ 'toString': function() { return 'abc'; } }, 'b', 2), false);
+assertThrows(function() { String.prototype.startsWith.call({ 'toString': function() { throw RangeError(); } }, /./); }, RangeError);
 
 assertThrows(function() { String.prototype.startsWith.apply(undefined); }, TypeError);
 assertThrows(function() { String.prototype.startsWith.apply(undefined, ['b']); }, TypeError);
@@ -208,5 +209,4 @@ assertEquals(String.prototype.startsWith.apply(42, ['2', 4]), false);
 assertEquals(String.prototype.startsWith.apply({ 'toString': function() { return 'abc'; } }, ['b', 0]), false);
 assertEquals(String.prototype.startsWith.apply({ 'toString': function() { return 'abc'; } }, ['b', 1]), true);
 assertEquals(String.prototype.startsWith.apply({ 'toString': function() { return 'abc'; } }, ['b', 2]), false);
-
-assertThrows(function() { String.prototype.startsWith.call({ 'toString': function() { throw RangeError(); } }, /./); }, RangeError);
+assertThrows(function() { String.prototype.startsWith.call({ 'toString': function() { throw RangeError(); } }, [/./]); }, RangeError);
