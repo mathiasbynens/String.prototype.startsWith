@@ -4,6 +4,8 @@ var assertThrows = assert['throws'];
 
 require('../startswith.js');
 
+Object.prototype[1] = 2; // try to break `arguments[1]`
+
 assertEquals(String.prototype.startsWith.length, 1);
 
 assertEquals('undefined'.startsWith(), true);

@@ -15,7 +15,7 @@ if (!String.prototype.startsWith) {
 			var stringLength = string.length;
 			var searchString = String(search);
 			var searchLength = searchString.length;
-			var position = arguments[1];
+			var position = arguments.length > 1 ? arguments[1] : undefined;
 			// `ToInteger`
 			var pos = position ? Number(position) : 0;
 			if (isNaN(pos)) {
