@@ -18,7 +18,7 @@ if (!String.prototype.startsWith) {
 			var position = arguments.length > 1 ? arguments[1] : undefined;
 			// `ToInteger`
 			var pos = position ? Number(position) : 0;
-			if (isNaN(pos)) {
+			if (pos != pos) { // better `isNaN`
 				pos = 0;
 			}
 			var start = Math.min(Math.max(pos, 0), stringLength);
