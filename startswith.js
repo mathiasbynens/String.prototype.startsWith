@@ -2,7 +2,6 @@
 if (!String.prototype.startsWith) {
 	(function() {
 		'use strict'; // needed to support `apply`/`call` with `undefined`/`null`
-		var indexOf = ''.indexOf;
 		var toString = {}.toString;
 		String.prototype.startsWith = function(search) {
 			var string = String(this);
@@ -26,7 +25,13 @@ if (!String.prototype.startsWith) {
 			if (searchLength + start > stringLength) {
 				return false;
 			}
-			return indexOf.call(string, searchString, pos) == start;
+			var index = -1;
+			while (++index < searchLength) {
+				if (string.charCodeAt(start + index) != searchString.charCodeAt(index)) {
+					return false;
+				}
+			}
+			return true;
 		};
 	}());
 }
