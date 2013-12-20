@@ -7,6 +7,7 @@ require('../startswith.js');
 Object.prototype[1] = 2; // try to break `arguments[1]`
 
 assertEquals(String.prototype.startsWith.length, 1);
+assertEquals(String.prototype.propertyIsEnumerable('startsWith'), false);
 
 assertEquals('undefined'.startsWith(), true);
 assertEquals('undefined'.startsWith(undefined), true);

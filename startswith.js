@@ -3,7 +3,7 @@ if (!String.prototype.startsWith) {
 	(function() {
 		'use strict'; // needed to support `apply`/`call` with `undefined`/`null`
 		var toString = {}.toString;
-		String.prototype.startsWith = function(search) {
+		var startsWith = function(search) {
 			var string = String(this);
 			if (
 				this == null ||
@@ -33,5 +33,14 @@ if (!String.prototype.startsWith) {
 			}
 			return true;
 		};
+		if (Object.defineProperty) {
+			Object.defineProperty(String.prototype, 'startsWith', {
+				'value': startsWith,
+				'configurable': true,
+				'writable': true
+			});
+		} else {
+			String.prototype.startsWith = startsWith;
+		}
 	}());
 }
