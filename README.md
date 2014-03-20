@@ -1,4 +1,4 @@
-# ES6 `String.prototype.startsWith` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.prototype.startsWith.png?branch=master)](https://travis-ci.org/mathiasbynens/String.prototype.startsWith)
+# ES6 `String.prototype.startsWith` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.prototype.startsWith.svg?branch=master)](https://travis-ci.org/mathiasbynens/String.prototype.startsWith)
 
 A robust & optimized ES3-compatible polyfill for [the `String.prototype.startsWith` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.startswith).
 
@@ -37,7 +37,7 @@ Polyfills + test suites for [`String.prototype.endsWith`](http://mths.be/endswit
 
 ## Author
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
+| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
 | [Mathias Bynens](http://mathiasbynens.be/) |
 
