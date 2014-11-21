@@ -2,7 +2,7 @@
 	"name": "string.prototype.startswith",
 	"version": "0.2.0",
 	"description": "A robust & optimized `String.prototype.startsWith` polyfill, based on the ECMAScript 6 specification.",
-	"homepage": "http://mths.be/startswith",
+	"homepage": "https://mths.be/startswith",
 	"main": "startswith.js",
 	"keywords": [
 		"string",
@@ -11,30 +11,20 @@
 		"ecmascript",
 		"polyfill"
 	],
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://mths.be/mit"
-		}
-	],
+	"license": "MIT",
 	"author": {
 		"name": "Mathias Bynens",
-		"url": "http://mathiasbynens.be/"
+		"url": "https://mathiasbynens.be/"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mathiasbynens/String.prototype.startsWith.git"
 	},
-	"bugs": {
-		"url": "https://github.com/mathiasbynens/String.prototype.startsWith/issues"
-	},
+	"bugs": "https://github.com/mathiasbynens/String.prototype.startsWith/issues",
 	"files": [
 		"LICENSE-MIT.txt",
 		"startswith.js"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"test": "node tests/tests.js",
 		"cover": "istanbul cover --report html --verbose --dir coverage tests/tests.js"

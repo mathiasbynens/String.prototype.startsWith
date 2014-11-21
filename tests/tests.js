@@ -166,7 +166,7 @@ assertEquals('[a-z]+(bar)?'.startsWith('(bar)?', 6), true);
 assertThrows(function() { '[a-z]+(bar)?'.startsWith(/(bar)?/); }, TypeError);
 assertThrows(function() { '[a-z]+/(bar)?/'.startsWith(/(bar)?/); }, TypeError);
 
-// http://mathiasbynens.be/notes/javascript-unicode#poo-test
+// https://mathiasbynens.be/notes/javascript-unicode#poo-test
 var string = 'I\xF1t\xEBrn\xE2ti\xF4n\xE0liz\xE6ti\xF8n\u2603\uD83D\uDCA9';
 assertEquals(string.startsWith(''), true);
 assertEquals(string.startsWith('\xF1t\xEBr'), false);

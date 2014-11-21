@@ -1,4 +1,4 @@
-/*! http://mths.be/startswith v0.2.0 by @mathias */
+/*! https://mths.be/startswith v0.2.0 by @mathias */
 if (!String.prototype.startsWith) {
 	(function() {
 		'use strict'; // needed to support `apply`/`call` with `undefined`/`null`
