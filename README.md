@@ -25,10 +25,6 @@ Then, in [Node.js](http://nodejs.org/):
 
 ```js
 require('string.prototype.startswith');
-
-// On Windows and on Mac systems with default settings, case doesn’t matter,
-// which allows you to do this instead:
-require('String.prototype.startsWith');
 ```
 
 ## Notes
