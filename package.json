@@ -30,7 +30,9 @@
 	},
 	"bugs": "https://github.com/mathiasbynens/String.prototype.startsWith/issues",
 	"scripts": {
-		"test": "node tests/tests.js",
+		"pretest": "es-shim-api --bound",
+		"test": "npm run tests-only",
+		"tests-only": "node tests/tests.js",
 		"cover": "istanbul cover --report html --verbose --dir coverage tests/tests.js"
 	},
 	"dependencies": {
@@ -38,6 +40,7 @@
 		"es-abstract": "^1.17.5"
 	},
 	"devDependencies": {
+		"@es-shims/api": "^2.1.2",
 		"istanbul": "^0.4.5"
 	}
 }
