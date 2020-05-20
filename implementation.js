@@ -16,7 +16,9 @@ var min = Math.min;
 module.exports = function startsWith(searchString) {
 	var O = RequireObjectCoercible(this);
 	var S = ToString(O);
-	if (IsRegExp(searchString)) throw TypeError();
+	if (IsRegExp(searchString)) {
+		throw TypeError('Argument to String.prototype.startsWith cannot be a RegExp');
+	}
 	var searchStr = ToString(searchString);
 
 	var pos = ToInteger(arguments.length > 1 ? arguments[1] : undefined);
