@@ -1,6 +1,6 @@
 {
 	"name": "string.prototype.startswith",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "A robust & optimized `String.prototype.startsWith` polyfill, based on the ECMAScript 6 specification.",
 	"homepage": "https://mths.be/startswith",
 	"main": "index.js",
