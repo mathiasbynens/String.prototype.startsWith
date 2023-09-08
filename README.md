@@ -1,4 +1,4 @@
-# ES6 `String.prototype.startsWith` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.prototype.startsWith.svg?branch=master)](https://travis-ci.org/mathiasbynens/String.prototype.startsWith)
+# ES6 `String.prototype.startsWith` polyfill [![string.prototype.startswith on npm](https://img.shields.io/npm/v/string.prototype.startswith)](https://www.npmjs.com/package/string.prototype.startswith)
 
 A robust & optimized polyfill for [the `String.prototype.startsWith` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.startswith).
 
@@ -36,6 +36,28 @@ In a browser:
 ## Notes
 
 Polyfills + test suites for [`String.prototype.endsWith`](https://mths.be/endswith) and [`String.prototype.contains`](https://mths.be/contains) are available, too.
+
+## For maintainers
+
+### How to publish a new release
+
+1. On the `main` branch, bump the version number in `package.json`:
+
+    ```sh
+    npm version patch
+    ```
+
+    Instead of `patch`, use `minor` or `major` [as needed](https://semver.org/).
+
+    Note that this produces a Git commit + tag.
+
+1. Push the release commit and tag:
+
+    ```sh
+    git push && git push --tags
+    ```
+
+    Our CI then automatically publishes the new release to npm.
 
 ## Author
 
