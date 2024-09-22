@@ -2,7 +2,7 @@
 
 'use strict';
 
-var callBind = require('es-abstract/helpers/callBind');
+var callBind = require('call-bind');
 var define = require('define-properties');
 
 var implementation = require('./implementation');
