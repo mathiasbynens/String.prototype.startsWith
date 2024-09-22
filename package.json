@@ -7,9 +7,9 @@
 	"exports": {
 		".": "./index.js",
 		"./auto": "./auto.js",
-		"./shim": "./shim.js",
-		"./getPolyfill": "./getPolyfill.js",
+		"./polyfill": "./polyfill.js",
 		"./implementation": "./implementation.js",
+		"./shim": "./shim.js",
 		"./package.json": "./package.json"
 	},
 	"keywords": [
