@@ -40,10 +40,10 @@
 		"es-abstract": "^1.17.5"
 	},
 	"devDependencies": {
-		"@es-shims/api": "^2.1.2",
-		"function-bind": "^1.1.1",
-		"functions-have-names": "^1.2.1",
+		"@es-shims/api": "^2.5.1",
+		"function-bind": "^1.1.2",
+		"functions-have-names": "^1.2.3",
 		"istanbul": "^0.4.5",
-		"tape": "^5.0.0"
+		"tape": "^5.9.0"
 	}
 }
