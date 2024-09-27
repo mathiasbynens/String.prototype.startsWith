@@ -2,11 +2,11 @@
 
 'use strict';
 
-var callBound = require('es-abstract/helpers/callBound');
-var RequireObjectCoercible = require('es-abstract/2019/RequireObjectCoercible');
-var ToString = require('es-abstract/2019/ToString');
-var IsRegExp = require('es-abstract/2019/IsRegExp');
-var ToInteger = require('es-abstract/2019/ToInteger');
+var callBound = require('call-bind/callBound');
+var RequireObjectCoercible = require('es-abstract/2024/RequireObjectCoercible');
+var ToString = require('es-abstract/2024/ToString');
+var IsRegExp = require('es-abstract/2024/IsRegExp');
+var ToIntegerOrInfinity = require('es-abstract/2024/ToIntegerOrInfinity');
 
 var StringCharCodeAt = callBound('String.prototype.charCodeAt');
 var max = Math.max;
@@ -21,7 +21,7 @@ module.exports = function startsWith(searchString) {
 	}
 	var searchStr = ToString(searchString);
 
-	var pos = ToInteger(arguments.length > 1 ? arguments[1] : undefined);
+	var pos = ToIntegerOrInfinity(arguments.length > 1 ? arguments[1] : undefined);
 	var len = S.length;
 	var start = min(max(pos, 0), len);
 	var searchLength = searchStr.length;
